@@ -9,7 +9,7 @@ strings - список строк для записи.
     а значением - записываемая строка. Для получения номера байта начала строки используйте метод tell() перед записью.
 '''
 def custom_write(file_name, strings):
-    with open(file_name, 'w+', encoding='utf-8') as file:
+    with open(file_name, 'w', encoding='utf-8') as file:
         dic = {}
         line = 0
         for string in strings:
