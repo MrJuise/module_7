@@ -10,7 +10,8 @@ class Product:
         self.category = str(category)
 
     def __str__(self):
-        return (f'{self.name}, {self.weight}, {self.category}')
+        prod = f'{self.name}, {self.weight}, {self.category}'
+        return prod
 
 class Shop:
     __file_name = 'products.txt'
@@ -21,7 +22,7 @@ class Shop:
     def add(self, *products):
         for p in products:
             if p.name in self.get_products():
-                print(f'Продукт {p.name} уже есть в магазине')
+                print(f'Продукт {self.__str__()} уже есть в магазине')
             else:
                 file = open(self.__file_name, 'a')
                 file.write(f'{p}\n')
