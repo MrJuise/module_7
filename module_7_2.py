@@ -29,5 +29,5 @@ info = [
 
 result = custom_write('test.txt', info)
 print(result)
-for elem in result:
+for elem in result.items():
     print(elem)
