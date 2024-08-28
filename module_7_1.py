@@ -10,8 +10,7 @@ class Product:
         self.category = str(category)
 
     def __str__(self):
-        prod = f'{self.name}, {self.weight}, {self.category}'
-        return prod
+        return f'{self.name}, {self.weight}, {self.category}'
 
 class Shop:
     __file_name = 'products.txt'
